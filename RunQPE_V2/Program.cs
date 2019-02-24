@@ -127,7 +127,7 @@ namespace RunQPE_V2
                 p.StartInfo.RedirectStandardOutput = true;  //由调用程序获取输出信息
                 p.StartInfo.RedirectStandardError = true;   //重定向标准错误输出
                 p.Start();//启动程序
-                p.StandardInput.WriteLine(appDir + @"DownloadCmorphData_V1/DownloadCmorph_V1.exe " + dtNow.Year.ToString("d4") + dtNow.Month.ToString("d2") + dtNow.Day.ToString("d2") + dtNow.Hour.ToString("d2") + dtNow.Minute.ToString("d2"));
+                p.StandardInput.WriteLine(appDir + @"DownloadCmorphData_V1/DownloadCmorphData_V1.exe " + dtNow.Year.ToString("d4") + dtNow.Month.ToString("d2") + dtNow.Day.ToString("d2") + dtNow.Hour.ToString("d2") + dtNow.Minute.ToString("d2"));
                 p.StandardInput.WriteLine(@"exit");
                 p.StandardInput.AutoFlush = true;
                 p.StandardOutput.ReadToEnd();
